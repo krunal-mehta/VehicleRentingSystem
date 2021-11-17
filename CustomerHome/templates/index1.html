@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+{% load static %}
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Tab Logo -->
+    <link rel="icon" href="{% static 'img/Logos/TabTop2Logo.png' %}" type="image/gif" sizes="18x18">
+
+    <title>Vehicle Rentals - {% block title %}Home{% endblock %}</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/customer.css' %}">
+    <script src="{% static 'js/customer.js' %}" type="text/javascript"></script>
+
+    <link rel="stylesheet" href="{% static 'css/hnicepage.css' %}" media="screen">
+<link rel="stylesheet" href="{% static 'css/hPage-15.css' %}" media="screen">
+       <script class="u-script" type="text/javascript" src="{% static 'js/hjquery-1.9.1.min.js' %}" defer=""></script>
+    <script class="u-script" type="text/javascript" src="{% static 'js/hnicepage.js' %}" defer=""></script>
+    <meta name="generator" content="Nicepage 3.30.2, nicepage.com">
+    <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i">
+    
+    
+    <script type="application/ld+json">{
+        "@context": "http://schema.org",
+        "@type": "Organization",
+        "name": ""
+}</script>
+    <meta name="theme-color" content="#4756c9">
+    <meta property="og:title" content="Page 15">
+    <meta property="og:type" content="website">
+<style type="text/css">
+    
+     .u-section-1 {
+  background-image: linear-gradient(0deg, rgba(0,0,0,0.85), rgba(0,0,0,0.85)), url("{% static 'img/home.jpg' %}");
+  background-position: 50% 50%;
+}
+
+</style>
+</head>
+
+<body>
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark" style="font-size: larger;" aria-label="" aria-labbelledby="">
+    <a href="\"><img class="navbar-brand" src="{% static 'img/Logos/Logo.png' %}" height="70"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp </span>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="/" style="color: #f1f1f1;">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="aboutus" style="color: #f1f1f1;">About us</a>
+            </li>
+        </ul>
+
+
+    </div>
+    </nav>
+
+    
+            
+    {% block pagecontent %} {%if Message%}
+    <div class="alert alert-warning alert-dismissible fade show my-2" role="alert">
+        <strong>{{Message}}!!</strong>
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    {%endif%} 
+
+    <section class="u-align-center u-clearfix u-image u-shading u-section-1" src="" data-image-width="150" data-image-height="100" id="sec-25ab">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <h1 class="u-text u-text-default u-title u-text-1">Log-In</h1>
+        <h1 class="u-text u-text-default u-title u-text-2"> Register</h1>
+        <a href="/customersignin/" class="u-btn u-button-style u-palette-2-base u-btn-1">Log-In as customer</a>
+        <a href="/customerregister/" class="u-btn u-button-style u-palette-2-base u-btn-2">Register as customer</a>
+        <a href="#" class="u-btn u-button-style u-palette-2-base u-btn-3">Log-In as STAFF</a>
+        <a href="#" class="u-btn u-button-style u-palette-2-base u-btn-4">Log-In as ADMIN</a>
+      </div>
+    </section>
+
+    {% endblock pagecontent %}
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js " integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN " crossorigin="anonymous "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js " integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q " crossorigin="anonymous "></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js " integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl " crossorigin="anonymous "></script>
+</body>
+
+</html>
